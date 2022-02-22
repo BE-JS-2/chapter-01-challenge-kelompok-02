@@ -478,7 +478,10 @@ console.log(sumOfArray([])) // expected output: 0
  * Lengkapi function berikut untuk menambah 1 setiap elemen yang ada di dalam array
  */
 function plusOne(arr) {
-
+  const result = arr.map((data)=>{
+    return data + 1
+  })
+  return result
 }
 
 console.log(plusOne([3, 6, 7])) // expected output: [4, 7, 8]
