@@ -498,7 +498,8 @@ console.log(sumOfArray([])) // expected output: []
  * Lengkapi function berikut untuk menggabungkan array-array
  */
 function joinArray(arr1, arr2, arr3) {
-
+const gabung = arr1.concat(arr2,arr3)
+return gabung
 }
 
 console.log(joinArray([1, 2], [3, 4], [8])) // expected output: [1, 2, 3, 4, 8]
