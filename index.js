@@ -33,6 +33,54 @@
 
 let nilai_student;
 
+nilai_student = [
+  {
+    "nama":"Andi",
+    "kelas":"12-IPA-A",
+    "nilai":90,
+  },
+  {
+    "nama":"Dila",
+    "kelas":"12-IPA-A",
+    "nilai":35,
+  },
+  {
+    "nama":"Udin",
+    "kelas":"12-IPA-A",
+    "nilai":67,
+  },
+  {
+    "nama":"Nina",
+    "kelas":"12-IPA-B",
+    "nilai":80,
+  },
+  {
+    "nama":"Nani",
+    "kelas":"12-IPA-B",
+    "nilai":73,
+  },
+  {
+    "nama":"Jali",
+    "kelas":"12-IPA-B",
+    "nilai":98,
+  },
+  {
+    "nama":"Farah",
+    "kelas":"12-IPA-C",
+    "nilai":76,
+  },
+  {
+    "nama":"Dini",
+    "kelas":"12-IPA-C",
+    "nilai":81,
+  },
+  {
+    "nama":"Farah",
+    "kelas":"12-IPA-C",
+    "nilai":87,
+  },
+]
+
 console.log(nilai_student)
 
 
@@ -48,6 +96,17 @@ let student_tidak_lulus_kelas_B;
 let student_tidak_lulus_kelas_C;
 
 
+student_tidak_lulus_kelas_A = nilai_student.filter((nilai)=>nilai.kelas === "12-IPA-A" && nilai.nilai < 70)
+
+console.log("student_tidak_lulus_kelas_A = ", student_tidak_lulus_kelas_A)
+student_tidak_lulus_kelas_B = nilai_student.filter((nilai)=>nilai.kelas === "12-IPA-B" && nilai.nilai < 70)
+
+console.log("student_tidak_lulus_kelas_B = ",student_tidak_lulus_kelas_B)
+student_tidak_lulus_kelas_C = nilai_student.filter((nilai)=>nilai.kelas === "12-IPA-C" && nilai.nilai < 70)
+
+console.log("student_tidak_lulus_kelas_C = ", student_tidak_lulus_kelas_C)
+
+
 /**
  * 
  * Hitung nilai rata-rata per kelas
@@ -56,8 +115,29 @@ let student_tidak_lulus_kelas_C;
  */
 
 let rata_rata_kelas_A;
+
+rata_rata_kelas_A = nilai_student.filter((avg)=>avg.kelas === "12-IPA-A")
+
+const average_A = rata_rata_kelas_A.reduce((total, next) => total + next.nilai, 0) / rata_rata_kelas_A.length;
+
+console.log("rata_rata_kelas_A = ",average_A)
+
 let rata_rata_kelas_B;
+
+rata_rata_kelas_B = nilai_student.filter((avg)=>avg.kelas === "12-IPA-B")
+
+const average_B = rata_rata_kelas_B.reduce((total, next) => total + next.nilai, 0) / rata_rata_kelas_A.length;
+
+console.log("rata_rata_kelas_B = ",average_B)
+
 let rata_rata_kelas_C;
+
+rata_rata_kelas_C = nilai_student.filter((avg)=>avg.kelas === "12-IPA-C")
+
+const average_C = rata_rata_kelas_B.reduce((total, next) => total + next.nilai, 0) / rata_rata_kelas_A.length;
+
+console.log("rata_rata_kelas_C = ",average_C)
+
  
 
 
@@ -365,19 +445,22 @@ let rata_rata_kelas_C;
 
 
 // Nama company dari Glenna Reichert
-console.log(users[]) // lengkapi
+const searchCompany = users.findIndex((name) => name.name ==="Glenna Reichert");
+console.log("company name = ",users[searchCompany].company.name) // lengkapi
 
 // Aktivitas tidak produktif Ervin Howell yang dilakukan tiap Jumat
-console.log(users[])
+const searchUnproductifity = users.findIndex((name) => name.name ==="Ervin Howell");
+console.log(users[searchUnproductifity])
 
 // Zipcode dari Ervin Howell
-console.log(users[])
+console.log("ZIP Code = ",users[searchUnproductifity].address.zipcode)
 
+const searchDay = users.findIndex((name) => name.name ==="Leanne Graham");
 // Leanne Graham melakukan coding setiap hari apa?
-console.log(users[])
+// console.log(users[searchDay])
 
 // Geolocation (latitude, longitude) dari alamat Clementina DuBuque adalah
-console.log(users[], users[])
+// console.log(users[], users[])
 
 
 
@@ -478,10 +561,7 @@ console.log(sumOfArray([])) // expected output: 0
  * Lengkapi function berikut untuk menambah 1 setiap elemen yang ada di dalam array
  */
 function plusOne(arr) {
-  const result = arr.map((data)=>{
-    return data + 1
-  })
-  return result
+
 }
 
 console.log(plusOne([3, 6, 7])) // expected output: [4, 7, 8]
@@ -498,8 +578,7 @@ console.log(sumOfArray([])) // expected output: []
  * Lengkapi function berikut untuk menggabungkan array-array
  */
 function joinArray(arr1, arr2, arr3) {
-const gabung = arr1.concat(arr2,arr3)
-return gabung
+
 }
 
 console.log(joinArray([1, 2], [3, 4], [8])) // expected output: [1, 2, 3, 4, 8]
