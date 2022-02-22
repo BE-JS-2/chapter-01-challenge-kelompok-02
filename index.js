@@ -31,7 +31,7 @@
  */
 
 
-let nilai_student;
+let nilai_student ;
 
 console.log(nilai_student)
 
@@ -365,19 +365,19 @@ let rata_rata_kelas_C;
 
 
 // Nama company dari Glenna Reichert
-console.log(users[]) // lengkapi
+// console.log(users[]) // lengkapi
 
 // Aktivitas tidak produktif Ervin Howell yang dilakukan tiap Jumat
-console.log(users[])
+// console.log(users[])
 
 // Zipcode dari Ervin Howell
-console.log(users[])
+// console.log(users[])
 
 // Leanne Graham melakukan coding setiap hari apa?
-console.log(users[])
+// console.log(users[])
 
 // Geolocation (latitude, longitude) dari alamat Clementina DuBuque adalah
-console.log(users[], users[])
+// console.log(users[], users[])
 
 
 
@@ -510,10 +510,11 @@ console.log(joinArray([], [8, 2], [6, 4])) // expected output: [8, 2, 6, 4]
 /**
  * Lengkapilah function berikut untuk menghitung harga setelah didiskon
  */
-
+console.log("jawaban no 0");
 
 function countDiscount(harga_awal, persen_diskon) {
-
+  let Diskon = harga_awal * persen_diskon / 100;
+  return harga_awal - Diskon;
 }
 
 console.log(countDiscount(10000, 10)) // expected output: 9000
@@ -529,7 +530,13 @@ console.log(countDiscount(50000, 20)) // expected output: 40000
  */
 
 function removeAllNumber(arr) {
-
+   let x = [];
+    arr.forEach(e => {
+        if (typeof(e) !== 'number') {
+            x.push(e);
+        }
+    })
+    return x;
 }
 
 
