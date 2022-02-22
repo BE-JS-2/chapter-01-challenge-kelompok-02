@@ -445,7 +445,6 @@ console.log("rata_rata_kelas_C = ",average_C)
 
 
 // Nama company dari Glenna Reichert
-<<<<<<< HEAD
 const searchCompany = users.findIndex((name) => name.name ==="Glenna Reichert");
 console.log("company name = ",users[searchCompany].company.name) // lengkapi
 
@@ -455,23 +454,10 @@ console.log(users[searchUnproductifity])
 
 // Zipcode dari Ervin Howell
 console.log("ZIP Code = ",users[searchUnproductifity].address.zipcode)
-=======
-// console.log(users[]) // lengkapi
-
-// Aktivitas tidak produktif Ervin Howell yang dilakukan tiap Jumat
-// console.log(users[])
-
-// Zipcode dari Ervin Howell
-// console.log(users[])
->>>>>>> aa2463c523c40db606561b71e2d62a32eb8d563f
 
 const searchDay = users.findIndex((name) => name.name ==="Leanne Graham");
 // Leanne Graham melakukan coding setiap hari apa?
-<<<<<<< HEAD
 // console.log(users[searchDay])
-=======
-// console.log(users[])
->>>>>>> aa2463c523c40db606561b71e2d62a32eb8d563f
 
 // Geolocation (latitude, longitude) dari alamat Clementina DuBuque adalah
 // console.log(users[], users[])
@@ -607,7 +593,7 @@ console.log(joinArray([], [8, 2], [6, 4])) // expected output: [8, 2, 6, 4]
 /**
  * Lengkapilah function berikut untuk menghitung harga setelah didiskon
  */
-console.log("jawaban no 0");
+console.log("jawaban no 9");
 
 function countDiscount(harga_awal, persen_diskon) {
   let Diskon = harga_awal * persen_diskon / 100;
@@ -625,7 +611,7 @@ console.log(countDiscount(50000, 20)) // expected output: 40000
 /**
  * Lengkapi function berikut untuk menghilangkan elemen array yang memiliki tipe data number
  */
-
+console.log("jawaban no 10");
 function removeAllNumber(arr) {
    let x = [];
     arr.forEach(e => {
