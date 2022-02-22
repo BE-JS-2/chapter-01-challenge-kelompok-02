@@ -464,157 +464,157 @@ const searchDay = users.findIndex((name) => name.name ==="Leanne Graham");
 
 
 
-// /**
-//  * SOAL NO. 3
-//  */
+/**
+ * SOAL NO. 3
+ */
 
 
-// /**
-//  * Lengkapi function untuk mengkonversi detik menjadi menit 
-//  */
+/**
+ * Lengkapi function untuk mengkonversi detik menjadi menit 
+ */
 
 
-//  function convertTime(seconds) {
+ function convertTime(seconds) {
 
-// }
-
-
-// console.log(convertTime(60)) // expected output: 01:00
-// console.log(convertTime(75)) // expected output: 01:15
-// console.log(convertTime(153)) // expected output: 02:33
+}
 
 
-
-// /**
-//  * SOAL NO.4
-//  */
-
-
-// /**
-//  * Lengkapilah function berikut untuk menampilkan 'Aku suka buah ...'
-//  */
-
-
-// function iLoveFruit(fruits) {
-
-// }
-
-
-// /**
-//  * sample input: ["Apple", "Orange", "Banana"]
-//  * sample output:
-//  * I love Apple
-//  * I love Orange
-//  * I love Banana
-//  */
+console.log(convertTime(60)) // expected output: 01:00
+console.log(convertTime(75)) // expected output: 01:15
+console.log(convertTime(153)) // expected output: 02:33
 
 
 
-// /**
-//  * SOAL NO. 5
-//  */
+/**
+ * SOAL NO.4
+ */
 
 
-// /**
-//  * Lengkapi function untuk menghilangkan nama buah-buahan yang dimulai dengan huruf A
-//  */
-// function removeFruitStartWithALetter(fruits) {
-
-// }
-
-// console.log(removeFruitStartWithALetter(["Apple", "Banana"])) // expected output: ["Banana"]
-// console.log(removeFruitStartWithALetter(["Anggur"])) // expected output: []
-// console.log(removeFruitStartWithALetter("Mengkudu", "Pisang")) // expected output: ["Mengkudu", "Pisang"]
-
-// /**
-//  * sample input: ["Apple", "Orange", "Banana"]
-//  * sample output: ["Orange", "Banana"]
-//  */
+/**
+ * Lengkapilah function berikut untuk menampilkan 'Aku suka buah ...'
+ */
 
 
+function iLoveFruit(fruits) {
 
-// /**
-//  * SOAL NO. 6
-//  */
-
-
-// /**
-//  * Lengkapi function berikut untuk menjumlahkan semua elemen dalam array
-//  */
-
-// function sumOfArray(arr) {
-
-// }
-
-// console.log(sumOfArray([3, 0, 9])) // expected output: 12
-// console.log(sumOfArray([12, 8, 4, 9])) // expected output: 33
-// console.log(sumOfArray([8])) // expected output: 8
-// console.log(sumOfArray([])) // expected output: 0
+}
 
 
-// /**
-//  * SOAL NO. 7
-//  */
+/**
+ * sample input: ["Apple", "Orange", "Banana"]
+ * sample output:
+ * I love Apple
+ * I love Orange
+ * I love Banana
+ */
 
 
-// /**
-//  * Lengkapi function berikut untuk menambah 1 setiap elemen yang ada di dalam array
-//  */
-// function plusOne(arr) {
 
-// }
-
-// console.log(plusOne([3, 6, 7])) // expected output: [4, 7, 8]
-// console.log(plusOne([0, 8, 9])) // expected output: [1, 9, 10]
-// console.log(sumOfArray([])) // expected output: []
+/**
+ * SOAL NO. 5
+ */
 
 
-// /**
-//  * SOAL NO. 8
-//  */
+/**
+ * Lengkapi function untuk menghilangkan nama buah-buahan yang dimulai dengan huruf A
+ */
+function removeFruitStartWithALetter(fruits) {
+
+}
+
+console.log(removeFruitStartWithALetter(["Apple", "Banana"])) // expected output: ["Banana"]
+console.log(removeFruitStartWithALetter(["Anggur"])) // expected output: []
+console.log(removeFruitStartWithALetter("Mengkudu", "Pisang")) // expected output: ["Mengkudu", "Pisang"]
+
+/**
+ * sample input: ["Apple", "Orange", "Banana"]
+ * sample output: ["Orange", "Banana"]
+ */
 
 
-// /**
-//  * Lengkapi function berikut untuk menggabungkan array-array
-//  */
-// function joinArray(arr1, arr2, arr3) {
 
-// }
-
-// console.log(joinArray([1, 2], [3, 4], [8])) // expected output: [1, 2, 3, 4, 8]
-// console.log(joinArray([9], [8])) // expected output: [9, 8]
-// console.log(joinArray([], [8, 2], [6, 4])) // expected output: [8, 2, 6, 4]
+/**
+ * SOAL NO. 6
+ */
 
 
-// /**
-//  * SOAL NO. 9
-//  */
+/**
+ * Lengkapi function berikut untuk menjumlahkan semua elemen dalam array
+ */
 
-// /**
-//  * Lengkapilah function berikut untuk menghitung harga setelah didiskon
-//  */
+function sumOfArray(arr) {
 
+}
 
-// function countDiscount(harga_awal, persen_diskon) {
-
-// }
-
-// console.log(countDiscount(10000, 10)) // expected output: 9000
-// console.log(countDiscount(5000, 25)) // expected output: 3750
-// console.log(countDiscount(50000, 20)) // expected output: 40000
-
-// /**
-//  * SOAL NO. 10
-//  */
-
-// /**
-//  * Lengkapi function berikut untuk menghilangkan elemen array yang memiliki tipe data number
-//  */
-
-// function removeAllNumber(arr) {
-
-// }
+console.log(sumOfArray([3, 0, 9])) // expected output: 12
+console.log(sumOfArray([12, 8, 4, 9])) // expected output: 33
+console.log(sumOfArray([8])) // expected output: 8
+console.log(sumOfArray([])) // expected output: 0
 
 
-// console.log(removeAllNumber(["Lala", undefined, 12, 9, true])) // expected output: ["Lala", undefined, true]
-// console.log(removeAllNumber([[1, 2], "Apel", false, 9])) // expected output: [[1, 2], "Apel", false]
+/**
+ * SOAL NO. 7
+ */
+
+
+/**
+ * Lengkapi function berikut untuk menambah 1 setiap elemen yang ada di dalam array
+ */
+function plusOne(arr) {
+
+}
+
+console.log(plusOne([3, 6, 7])) // expected output: [4, 7, 8]
+console.log(plusOne([0, 8, 9])) // expected output: [1, 9, 10]
+console.log(sumOfArray([])) // expected output: []
+
+
+/**
+ * SOAL NO. 8
+ */
+
+
+/**
+ * Lengkapi function berikut untuk menggabungkan array-array
+ */
+function joinArray(arr1, arr2, arr3) {
+
+}
+
+console.log(joinArray([1, 2], [3, 4], [8])) // expected output: [1, 2, 3, 4, 8]
+console.log(joinArray([9], [8])) // expected output: [9, 8]
+console.log(joinArray([], [8, 2], [6, 4])) // expected output: [8, 2, 6, 4]
+
+
+/**
+ * SOAL NO. 9
+ */
+
+/**
+ * Lengkapilah function berikut untuk menghitung harga setelah didiskon
+ */
+
+
+function countDiscount(harga_awal, persen_diskon) {
+
+}
+
+console.log(countDiscount(10000, 10)) // expected output: 9000
+console.log(countDiscount(5000, 25)) // expected output: 3750
+console.log(countDiscount(50000, 20)) // expected output: 40000
+
+/**
+ * SOAL NO. 10
+ */
+
+/**
+ * Lengkapi function berikut untuk menghilangkan elemen array yang memiliki tipe data number
+ */
+
+function removeAllNumber(arr) {
+
+}
+
+
+console.log(removeAllNumber(["Lala", undefined, 12, 9, true])) // expected output: ["Lala", undefined, true]
+console.log(removeAllNumber([[1, 2], "Apel", false, 9])) // expected output: [[1, 2], "Apel", false]
