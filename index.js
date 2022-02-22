@@ -478,7 +478,10 @@ console.log(sumOfArray([])) // expected output: 0
  * Lengkapi function berikut untuk menambah 1 setiap elemen yang ada di dalam array
  */
 function plusOne(arr) {
-
+  const result = arr.map((data)=>{
+    return data + 1
+  })
+  return result
 }
 
 console.log(plusOne([3, 6, 7])) // expected output: [4, 7, 8]
@@ -495,7 +498,8 @@ console.log(sumOfArray([])) // expected output: []
  * Lengkapi function berikut untuk menggabungkan array-array
  */
 function joinArray(arr1, arr2, arr3) {
-
+const gabung = arr1.concat(arr2,arr3)
+return gabung
 }
 
 console.log(joinArray([1, 2], [3, 4], [8])) // expected output: [1, 2, 3, 4, 8]
